@@ -28,7 +28,7 @@ const TodoForm = ({ name, done }: Todo) => {
           placeholder="was steht an?"
           id="input"
           type="text"
-          className="rounded-md border-2 text-center text-lg"
+          className="rounded-md border-2 text-center text-lg text-black"
         />
       </div>
     </form>
