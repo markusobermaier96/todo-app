@@ -24,7 +24,7 @@ type Todo = {
 const TodoForm = ({ name, done }: Todo) => {
   return (
     <form action="addTodo" autoComplete="off" onSubmit={addTodo()}>
-      <div className="flex justify-center bg-gray-800 p-7">
+      <div className="flex justify-center p-7">
         <input
           placeholder="was steht an?"
           id="input"
@@ -37,7 +37,7 @@ const TodoForm = ({ name, done }: Todo) => {
 };
 
 const TodoList = ({ name, done }: Todo) => {
-  return <div className="flex h-screen bg-gray-700"></div>;
+  return <div className="flex h-screen"></div>;
 };
 
 function addTodo():
