@@ -4,10 +4,10 @@ import { trpc } from "../utils/trpc";
 
 const Home: NextPage = () => {
   const hello = trpc.example.hello.useQuery({ text: "from tRPC" });
-
+  let todoText = "";
   return (
     <div>
-      <TodoForm name={"todo"} done={false}></TodoForm>
+      <TodoForm name={todoText} done={false}></TodoForm>
       <TodoList name={"todo"} done={false}></TodoList>
     </div>
   );
